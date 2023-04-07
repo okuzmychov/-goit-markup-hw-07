@@ -59,14 +59,14 @@
     </header> -->
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn" data-modal-open type="button">
             Order Service
           </button>
         </div>
-      </section> -->
+      </section>
 
       <section class="studio">
         <div class="container">
@@ -137,10 +137,29 @@
           <h2 class="section-title">What are we doing</h2>
           <ul class="work-list list">
             <li class="work-item">
-              <img src="./images/img1.jpg" alt="computer monitor" width="360" />
+              <img
+                srcset="./images/img1-2x.jpg 2x"
+                src="./images/img1.jpg"
+                alt="computer monitor"
+                width="360"
+              />
             </li>
-            <li><img src="./images/img2.jpg" alt="phone" width="360" /></li>
-            <li><img src="./images/img3.jpg" alt="laptop" width="360" /></li>
+            <li>
+              <img
+                srcset="./images/img2-2x.jpg 2x"
+                src="./images/img2.jpg"
+                alt="phone"
+                width="360"
+              />
+            </li>
+            <li>
+              <img
+                srcset="./images/img3-2x.jpg 2x"
+                src="./images/img3.jpg"
+                alt="laptop"
+                width="360"
+              />
+            </li>
           </ul>
         </div>
       </section> -->
@@ -150,7 +169,12 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img src="./images/img-mark.jpg" alt="photo mark" width="264" />
+              <img
+                srcset="./images/img-mark.jpg 1x, ./images/img-mark-2x.jpg 2x"
+                src="./images/img-mark.jpg"
+                alt="photo mark"
+                width="264"
+              />
               <div class="team-content">
                 <h3 class="stidio-text">Mark Guerrero</h3>
                 <p class="studio-link">Product Designer</p>
@@ -185,7 +209,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/img-tom.jpg" alt="photo tom" width="264" />
+              <img
+                srcset="./images/img-tom.jpg 1x, ./images/img-tom-2x.jpg 2x"
+                src="./images/img-tom.jpg"
+                alt="photo tom"
+                width="264"
+              />
               <div class="team-content">
                 <h3 class="stidio-text">Tom Ford</h3>
                 <p class="studio-link">Frontend Developer</p>
@@ -221,6 +250,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/img-camilla.jpg    1x,
+                  ./images/img-camilla-2x.jpg 2x
+                "
                 src="./images/img-camilla.jpg"
                 alt="photo camilla"
                 width="264"
@@ -260,6 +293,10 @@
             </li>
             <li class="team-item">
               <img
+                srcset="
+                  ./images/img-daniel.jpg    1x,
+                  ./images/img-daniel-2x.jpg 2x
+                "
                 src="./images/img-daniel.jpg"
                 alt="photo daniel"
                 width="264"
