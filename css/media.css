@@ -1,24 +1,32 @@
 @media screen and (min-width: 428px) {
   .container {
     max-width: 426px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  }
+
+    .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-mob-1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .box {
-    background-image: url('photo@2x.png');
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bg-mob-2x.jpg);
   }
 }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 
   .hero {
@@ -49,9 +57,35 @@
     url(../images/bg-tab-2x.jpg);
   }
 }
+
+.studio-list,
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+}
+
+.studio-item {
+  width: calc((100% - 56px) / 2);
+}
+
+.studio-text,
+.pictures-item {
+  margin-bottom: 8px;
+  color: var(--primery-text-color);
+  text-align: left;
+}
+
+.team-list {
+  gap: 64px 24px;
+  padding-left: 108px;
+  padding-right: 108px;
+  }
+
+
   .team-item {
     width: calc((100% - 240px) / 2);
-    gap: 72px 24px;
+    /* gap: 24px; */
   }
 }
 
