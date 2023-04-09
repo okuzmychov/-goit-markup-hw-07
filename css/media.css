@@ -22,11 +22,16 @@
     url(../images/bg-mob-2x.jpg);
   }
 }
+
+.studio-icon-list {
+  display: none;
+}
+
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 766px;
   }
 
   .hero {
@@ -58,15 +63,18 @@
   }
 }
 
-.studio-list,
-.work-list {
+.studio-icon-list {
+  display: none;
+}
+
+.studio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 72px 24px;
 }
 
 .studio-item {
-  width: calc((100% - 56px) / 2);
+  width: calc((100% - 54px) / 2);
 }
 
 .studio-text,
@@ -76,22 +84,27 @@
   text-align: left;
 }
 
+.work {
+display: none;
+}
+
+.team-container {
+width: 582px;
+}
+
 .team-list {
   gap: 64px 24px;
-  padding-left: 108px;
-  padding-right: 108px;
   }
 
 
   .team-item {
-    width: calc((100% - 240px) / 2);
-    /* gap: 24px; */
+  
   }
 }
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 
   .hero {
@@ -125,5 +138,112 @@
     url(../images/bg-desktop-2x.jpg);
   }
 }
+
+.studio {
+  padding: 120px 0px;
 }
+
+.studio-icon-list {
+  display: flex;
+  gap: 24px;
+}
+.studio-icon-item {
+  width: 264px;
+  height: 112px;
+  background: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.studio-icon-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.studio-list {
+  justify-content: space-between;
+}
+
+.studio-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.studio-text,
+.pictures-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.20;
+}
+
+.studio-link,
+.pictures-text {
+  font-weight: 400;
+  /* align-self: stretch; */
+  flex-grow: 0;
+  margin-bottom: 0;
+}
+
+.work {
+display: flex;
+}
+
+.section-title-work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primery-text-color);
+  margin-bottom: 72px;
+}
+
+.work-container {
+}
+
+.work-list {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 120px;
+}
+
+.work-item {
+  width: 100%;
+}
+
+.team-container {
+width: 1158px;
+}
+
+.team-list {
+  width: calc((100% - 72px) / 4);
+  flex-wrap: nowrap;
+  gap: 24px;
+  }
+
+.team-list > .studio-text {
+  margin-bottom: 8px;
+}
+
+.studio-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.customers-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-item {
+  width: 168px;
+  height: 88px;
+  cursor: pointer;
+}
+}
+
 
