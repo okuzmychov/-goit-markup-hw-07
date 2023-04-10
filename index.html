@@ -23,7 +23,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="header-logo link" href="./index.html"
@@ -55,8 +55,73 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg width="32" height="22" class="menu-open">
+            <use href="./images/icons.svg#menu-icon"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <div>
+          <button type="button" data-modal-close class="mob-menu-close">
+            <svg width="8" height="8" class="close-icon">
+              <use href="./images/icons.svg#icon-close-18"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="mob-address-list list">
+            <li class="mob-address-item">
+              <a class="mob-menu-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-address-item">
+              <a class="mob-menu-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link"
+                ><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link"
+                ><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link"
+                ><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link"
+                ><svg width="24" height="24" class="mob-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <main>
       <section class="hero">
@@ -176,8 +241,8 @@
                 width="264"
               />
               <div class="team-content">
-                <h3 class="stidio-text">Mark Guerrero</h3>
-                <p class="studio-link">Product Designer</p>
+                <h3 class="team-text">Mark Guerrero</h3>
+                <p class="team-link">Product Designer</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link"
@@ -216,8 +281,8 @@
                 width="264"
               />
               <div class="team-content">
-                <h3 class="stidio-text">Tom Ford</h3>
-                <p class="studio-link">Frontend Developer</p>
+                <h3 class="team-text">Tom Ford</h3>
+                <p class="team-link">Frontend Developer</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link"
@@ -259,8 +324,8 @@
                 width="264"
               />
               <div class="team-content">
-                <h3 class="stidio-text">Camila Garcia</h3>
-                <p class="studio-link">Marketing</p>
+                <h3 class="team-text">Camila Garcia</h3>
+                <p class="team-link">Marketing</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link"
@@ -302,8 +367,8 @@
                 width="264"
               />
               <div class="team-content">
-                <h3 class="stidio-text">Daniel Wilson</h3>
-                <p class="studio-link">UI Designer</p>
+                <h3 class="team-text">Daniel Wilson</h3>
+                <p class="team-link">UI Designer</p>
                 <ul class="team-soc-list list">
                   <li class="team-soc-item">
                     <a href="" class="team-soc-link link"
@@ -528,6 +593,7 @@
         </form>
       </div>
       <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
     </div>
   </body>
 </html>
