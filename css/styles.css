@@ -91,7 +91,7 @@ img {
   position: relative;
 }
 
-.current::after {
+.link.current::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -118,7 +118,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color);
-  margin-right: 76px;
+  margin-right: 120px;
 }
 
 .accent {
