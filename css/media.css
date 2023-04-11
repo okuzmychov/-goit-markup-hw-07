@@ -166,7 +166,6 @@
   .customers-link {
     padding: 16px 32px;
   }
-}
 
 .footer-container {
   width: 582px;
@@ -201,6 +200,7 @@
 .online-btn {
   margin-left: 0;
   margin-right: 0;
+}
 }
 
 @media screen and (min-width: 1158px) {
@@ -385,15 +385,17 @@
   }
 
   .footer-wraper {
-    width: 264px;
+    /* width: 264px; */
     flex-wrap: nowrap;
     gap: 120px;
   }
 
   .footer-container {
     width: 1158px;
-    gap: 120px;
+    flex-wrap: nowrap;
+    gap: 80px;
   }
+
   .footer-text {
     width: 264px;
     font-size: 16px;
@@ -458,11 +460,11 @@
     background-color: #31d0aa;
   }
 
-  .footer-subscribe {
+  /* .footer-subscribe {
     width: 453px;
     position: absolute;
     right: 15px;
-  }
+  } */
 
   .online-field {
     position: relative;
