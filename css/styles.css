@@ -219,6 +219,7 @@ img {
     url(../images/bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   max-width: 426px;
   margin-right: auto;
   margin-left: auto;
@@ -565,9 +566,7 @@ img {
   border-radius: 4px;
   padding: 16px 40px;
 
-  transition-property: border-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic);
+  transition: fill 250ms var(--cubic), border-color 250ms var(--cubic);
 }
 
 .customers-icon {
